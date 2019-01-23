@@ -33,3 +33,11 @@ a:hover {
   width: 100%;
   margin: 0 auto;
 }
+
+.grey-line {
+	background: #ededed;
+}
+
+.grey-line-text {
+	height: 30px;
+}
