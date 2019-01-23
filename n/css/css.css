@@ -12,3 +12,24 @@ body {
   font-size: 14px;
   min-width: 100%;
   color: #232323 !important; }
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000 !important;
+}
+
+.ps {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1240px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
