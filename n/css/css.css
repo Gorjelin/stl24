@@ -40,4 +40,150 @@ a:hover {
 
 .grey-line-text {
 	height: 30px;
+  color: #727b83;
+}
+
+.grey-line-text a {
+  color: #727b83;
+}
+
+.grey-line-text .ap {
+  position: absolute;
+  top: 8px;
+  line-height: 1em;
+}
+
+.grey-line-text .slogan {
+  left: 0;
+}
+
+.grey-line-text .email {
+  left: 20.5%;
+}
+
+.grey-line-text .viber-phone {
+  left: 45%;
+}
+
+.grey-line-text .viber-phone .viber, .grey-line-text .viber-phone .phone {
+  position: relative;
+  float: left;
+  padding-left: 15px;
+  margin-right: 22px;
+}
+
+.grey-line-text .viber-phone .viber {
+  background: url(../img/viber.svg) left center no-repeat;
+  background-size: auto 100%;
+}
+
+.grey-line-text .viber-phone .phone {
+  background: url(../img/call.svg) left center no-repeat;
+  background-size: auto 95%;
+}
+
+.grey-line-text .login-block {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  line-height: 1em;
+  color: #000;
+}
+
+.grey-line-text .login-block a {
+  color: #000;
+}
+
+#content {
+  position: relative;
+  float: right;
+  width: 69.5%;
+}
+
+#header-fix {
+  height: 42px;
+}
+
+#header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+#header .header {
+  height: 42px;
+  color: #727b83;
+  font-size: 17px;
+}
+
+#header .header .logo {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 80%
+}
+
+#header .header .header-full {
+  position: absolute;
+  top: 9px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  padding-top: 1px;
+}
+
+#header .header .header-menu {
+  left: 20.5%;
+  padding-left: 27px;
+  background: url(../img/menu.svg) left center no-repeat;
+  background-size: auto 100%;
+}
+
+#header .header .header-search {
+  left: 35.4%;
+  background: url(../img/search.svg) left center no-repeat;
+  background-size: auto 97%;
+  padding-left: 24px;
+}
+
+#header .header .header-order {
+  left: 49.5%;
+  background: url(../img/envelope.svg) left center no-repeat;
+  background-size: auto 97%;
+  padding-left: 27px;
+}
+
+#header .header .header-slogan {
+  position: absolute;
+  top: 9px;
+  left: 64.5%;
+  line-height: 1.3em;
+  padding-top: 1px;
+}
+
+#header .header .header-cart {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  padding-left: 31px;
+  line-height: 0.8em;
+  text-align: right;
+}
+
+#header .header .header-cart .cart-small {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1em;
+}
+
+#header .header .header-cart .cart-ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  bottom: 0;
+  background: url(../img/shopping-cart.svg) top center no-repeat;
+  background-size: 100% auto;
 }
