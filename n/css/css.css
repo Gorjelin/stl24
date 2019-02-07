@@ -228,6 +228,80 @@ a:hover {
 
 }
 
+.goods.tile {
+  display: flex;
+  justify-content flex-start;
+  flex-wrap: wrap;
+}
+
+.goods.tile .product {
+  position: relative;
+  float: left;
+  width: 19%;
+  margin: 10px 1.25% 10px 0;
+}
+
+.goods.tile .product .prod-img {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c5c5c5;
+}
+
+.goods.tile .product:hover .prod-img {
+  border: 1px solid red;
+}
+
+.goods.tile .product .prod-img img {
+  max-width: 100%;
+  max-height: 168px;
+}
+
+
+.goods.tile .product .prod-name {
+  display: block;
+  font-weight: bold;
+  min-height: 34px;
+  line-height: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.goods.tile .product .price-block s {
+  font-size: 14px;
+  color: #404040;
+}
+
+.goods.tile .product.fix-margin-right {
+  margin-right: 0;
+}
+
+.goods.tile .product .prod-set-price {
+  position: relative;
+  float: left;
+  color: #ff0000;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.goods.tile .product .prod-add-cart {
+  position: relative;
+  float: right;
+  padding-left: 25px;
+  height: 21px;
+  font-size: 17px;
+  background: url(../img/shopping-cart.svg) left center no-repeat;
+  background-size: auto 100%;
+}
+
+
 #quick-ord-block div, #quick-ord-block span, #quick-ord-block a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
