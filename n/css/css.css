@@ -693,7 +693,7 @@ top: 4px !important;
 right: 4px !important;
 }
 .evaluation-screen .column-line-textarea {
-width: 94%;
+width: 100%;
 border: 1px solid #959595;
 border-radius: 0;
 height: 90px;
@@ -799,7 +799,7 @@ right: 5px;
 width: 11px;
 height: 11px;
 cursor: pointer;
-background: url(/img/delete.svg) center center no-repeat;
+background: url(../img/delete.svg) center center no-repeat;
 }
 
 #evaluation-click {

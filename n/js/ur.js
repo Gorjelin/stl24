@@ -4,9 +4,8 @@ $(document).ready(function(){
 
 	var countFiles = 0;
 	$(document).on('change', '#evaluation-form .input-file', function() {
-		console.log(this.files[0]);
 
-	var str = $(".column-line-input.pl-holder.column-line-div").text();
+	var str = $('.column-line-input.pl-holder.column-line-div').text();
 	var countFiles = str.substr(-1);
 	countFiles = Number(countFiles);
 	if(isNaN(countFiles)){
@@ -20,7 +19,7 @@ $(document).ready(function(){
 	}
 
 	 if(countFiles > 3) countFiles = 3;
-	$(".column-line-input.pl-holder.column-line-div").html(addedFile + countFiles);
+	$('.column-line-input.pl-holder.column-line-div').html(addedFile + countFiles);
 	//var nameFile = document.getElementById("file").files;
 	//$('.file-txt').html('Р В¤Р С•РЎвЂљР С•: ' + nameFile[0].name);
 	});
