@@ -306,152 +306,6 @@ a:hover {
   background-size: auto 100%;
 }
 
-
-#quick-ord-block div, #quick-ord-block span, #quick-ord-block a {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  color: #727b83;
-}
-
-#quick-ord-block .quick-order-back {
-  background: url(../img/back-line.jpg) top center repeat-y;
-}
-
-#quick-ord-block {
-  margin-top: 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  line-height: 28px;    
-}
-
-#quick-ord-block.fix-mrg-top {
-  margin-top: 10px;
-}
-
-#quick-ord-block .line-left {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  background: #fefcf9;
-}
-
-#quick-ord-block .line-right {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  background: #fdf1df;
-}
-
-#quick-order {
-  padding-top: 1px;
-}
-
-#quick-order .ico-nets {  position: absolute;
-  top: 0;
-  left: -18px;
-  background-size: auto 100%;
-  height: 31px;
-  width: 31px;
-  border: 1px solid #8b51a2;
-  border-radius: 20px;
-}
-
-#quick-order .ico-viber {
-  background: url(../img/viber_net.svg) center center no-repeat;
-  background-size: 19px auto;
-}
-
-#quick-order .ico-whatsapp {
-  background: url(../img/whatsapp.svg) center center no-repeat;
-  background-size: 19px auto;
-  border-color: #009e00;
-}
-
-#quick-order .ico-telegram {
-  border-color: #00a7e4;
-  background: url(../img/telegram.svg) center center no-repeat;
-  background-size: 19px auto;
-}
-
-#quick-order .ico-instagram {
-  border-color: #e70271;
-  background: url(../img/inst.svg) center center no-repeat;
-  background-size: 17px auto;
-}
-
-#quick-order .ico-facebook {
-  border-color: #245a9c;
-  background: url(../img/facebook-logo.svg) center center no-repeat;
-  background-size: 17px auto;
-}
-
-#quick-order .ico-vkontakte {
-  border-color: #1f628d;
-  background: url(../img/vkontakte-logo.svg) center center no-repeat;
-  background-size: 17px auto;
-}
-
-#quick-order .ico-skype {
-  background: url(../img/skype.svg) center center no-repeat;
-  background-size: 20px auto;
-  border-color: #00aaf1;
-}
-
-#quick-order .ico-ok {
-  background-position: -335px top;
-  border-color: #ee6600;
-}
-
-#quick-order .ico-pin {
-  background-position: -382px top;
-  border-color: #cb2028;
-}
-
-#quick-order .quick-order-title {
-  position: relative;
-  float: left;
-  font-size: 19px;
-  text-transform: uppercase;
-  font-family: 'latobold';
-  margin-top: 0;
-  margin-right: 18px;
-  padding-left: 8px;
-  line-height: 33px;
-}
-
-#quick-order .quick-order-line {
-  position: relative;
-  float: left;
-}
-
-#quick-order .quick-order {
-  position: relative;
-  float: left;
-  cursor: pointer;
-  padding: 3px 12px 3px 16px;
-  margin: -1px 10px 0 18px;
-  border-radius: 5px;
-  font-family: 'latobold';
-  font-size: 16px;
-  color: #9f9696;
-  text-transform: uppercase;
-}
-
-#quick-order .quick-order.left-fix-margin {
-  margin-right: 0;
-}
-
-#quick-order .quick-order:hover {
-  background: #fdf1df;
-  text-decoration: none;
-}
-
 #footer .footer {
   height: 145px;
 }
@@ -841,16 +695,16 @@ background: url(../img/delete.svg) center center no-repeat;
   font-size: 12px;
 
 }
-#quick-order-main-block {
+#communications {
     margin-top: 20px;
 }
-#quick-order-main {
+#communications-main {
 padding-top: 1px;
 border-bottom: 1px solid #ff0000;
 padding-bottom: 23px;
 }
 
-#quick-order-main .ico-nets {  position: absolute;
+#communications-main .ico-nets {  position: absolute;
 top: 0;
 left: -18px;
 background: url(../img/com.png) no-repeat;
@@ -861,63 +715,63 @@ border: 1px solid #8b51a2;
 border-radius: 20px;
 }
 
-#quick-order-main .ico-viber {
+#communications-main .ico-viber {
   background-position: left top;
 }
 
-#quick-order-main .ico-whatsapp {
+#communications-main .ico-whatsapp {
   background-position: -41px top;
   border-color: #4fc48a;
 }
 
-#quick-order-main .ico-telegram {
+#communications-main .ico-telegram {
   background-position: -82px top;
   border-color: #76d1f7;
 }
 
-#quick-order-main .ico-instagram {
+#communications-main .ico-instagram {
   background-position: -123px top;
   border-color: #c6066e;
 }
 
-#quick-order-main .ico-facebook {
+#communications-main .ico-facebook {
   background-position: -164px top;
   border-color: #3c5a99;
 }
 
-#quick-order-main .ico-vkontakte {
+#communications-main .ico-vkontakte {
   background-position: -206px top;
   border-color: #28507c;
 }
 
-#quick-order-main .ico-skype {
+#communications-main .ico-skype {
   background-position: -247px top;
   border-color: #00aaf1;
 }
 
-#quick-order-main .ico-ok {
+#communications-main .ico-ok {
   background-position: -288.6px top;
   border-color: #ec5400;
 }
 
-#quick-order-main .ico-pin {
+#communications-main .ico-pin {
   background-position: -316px top;
 }
 
-#quick-order-main .ico-email {
+#communications-main .ico-email {
   background: url(../img/email.svg) center center no-repeat;
   background-size: 70% auto;
   border-color: #ff3950;
 }
 
-#quick-order-main .ico-phone {
+#communications-main .ico-phone {
   background: url(../img/phone.svg) center center no-repeat;
   background-size: 70% auto;
   border-color: #ee6702;
 }
 
 
-#quick-order-main .quick-order-title {
+#communications-main .communications-h1 {
 position: relative;
 float: left;
 font-size: 15px;
@@ -929,18 +783,19 @@ font-weight: bold;
 text-decoration: none;
 }
 
-#quick-order-main .quick-order-fix {
+#communications-main .communications-fix {
   position: relative;
   float: left;
 }
 
-#quick-order-main .quick-order-line {
-position: relative;
-float: left;
-margin-top: 16px;
+#communications-main .communications-line {
+    position: relative;
+    float: left;
+    margin-top: 16px;
+    width: 100%;
 }
 
-#quick-order-main .quick-order {
+#communications-main .communications-link {
 position: relative;
 float: left;
 /*border: 1px solid #ec793a;*/
@@ -953,22 +808,22 @@ font-size: 14px;
 color: #9f9696;
 text-transform: uppercase;
 }
-#quick-order-main .instagram{
+#communications-main .instagram{
   margin-right: 20px!important;
 }
-#quick-order-main .facebook{
+#communications-main .facebook{
 margin-left: 17px!important;
 margin-right: 24px!important;
 }
-#quick-order-main .ok{
+#communications-main .ok{
 
 margin-left: 25px!important;
 }
-#quick-order-main .quick-order.left-fix-margin {
+#communications-main .communications-link .fixed-margin {
 margin-right: 0;
 }
 
-#quick-order-main .quick-order-phone {
+#communications-main .communications-phone {
   display: none;
   position: absolute;
   top: 25px;
@@ -981,7 +836,7 @@ margin-right: 0;
   z-index: 10;
 }
 
-#quick-order-main .quick-order-fix:hover .quick-order-phone {
+#communications-main .quick-order-fix:hover .quick-order-phone {
   display: block;
 }
 .evaluation-screen .placeholder::-webkit-input-placeholder       {color:#a6a6a6; font-style: italic;}
