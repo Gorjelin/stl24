@@ -20,10 +20,6 @@ a {
   color: #000;
 }
 
-a:hover {
-  color: #000 !important;
-}
-
 .ps {
   position: relative;
   float: left;
@@ -279,6 +275,8 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+    font-family: 'latobold';
+    color: #434141;
 }
 
 .goods.tile .product .price-block s {
@@ -303,10 +301,16 @@ a:hover {
   float: right;
   padding-left: 25px;
   height: 21px;
-  font-size: 17px;
+  font-size: 14px;
   background: url(../img/shopping-cart.svg) left center no-repeat;
   background-size: auto 100%;
+        color: #0670ad;
+    text-decoration: underline;
 }
+.goods.tile .product .prod-add-cart:hover{
+    text-decoration: none;
+}
+
 
 #footer .footer {
   height: 145px;
@@ -897,5 +901,78 @@ margin-right: 0;
     width: 10px;
     height: 18px;
     top: 4px;
-    
+}
+
+
+.goods .product .txt-product{
+    width: 100%;
+    position: relative;
+    float: left;
+}
+.goods .product .txt-product .title-link{
+    color: #404040;
+    text-decoration: none;
+    font-family: 'latobold';
+    min-height: 28px;
+    display: block;
+	overflow: hidden;
+  position: relative;
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.goods .product .txt-product .desc{
+    font-family: 'latoitalic';
+    font-size: 12px;
+    margin-top: 6px;
+    color: #404040;
+}
+.goods .product .txt-product .cart-line{
+    margin-top: 3px;
+    float: left;
+    width: 100%;
+}
+.goods .product .txt-product .cart-line .price{
+    font-size: 17px;
+    display: inline-block;
+    color: #2c1913;
+    font-family: 'latobold';
+}
+.goods .product .txt-product .cart-line .to-cart{
+    float: right;
+    color: #0670ad;
+    margin-top: 2px;
+    display: inline-block;
+    background: url(../img/to-cart.svg) left center no-repeat;
+    background-size: 17px auto;
+    padding-left: 22px;
+    text-decoration: underline;
+}
+
+.goods .product .txt-product .cart-line .to-cart:hover{
+    text-decoration: none;
+}
+.goods .product .txt-product .old-price{
+    font-size: 12px;
+    font-family: 'latobold';
+    text-decoration: line-through;
+     color: #2c1913;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+.goods .product .txt-product .cart-line .new-price{
+    font-size: 17px;
+    display: inline-block;
+    color: #ff0000;
+    font-family: 'latobold';
+    float: left;
+}
+.goods .product .txt-product .cart-line .cart-ico{
+    width: 17px;
+    height: 15px;
+    position: relative;
+    float: left;
+    background: url(../img/cart-red.png) no-repeat;
+    margin-left: 12px;
 }
