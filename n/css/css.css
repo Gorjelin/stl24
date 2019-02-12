@@ -6,7 +6,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 :focus {
   outline: 0; }
-
+:focus::-webkit-input-placeholder {color:transparent;}
+:focus::-moz-placeholder          {color:transparent;}
+:focus:-moz-placeholder           {color:transparent;}
+:focus:-ms-input-placeholder      {color:transparent;}
 body {
   font: normal 75%/150% 'latoregular', Arial, Tahoma, Verdana, Georgia, sans-serif;
   font-size: 14px;
@@ -200,6 +203,7 @@ a:hover {
 
 #left-col .left-menu {
   list-style: none;
+    font-family: 'latobold';
 }
 
 #left-col .left-menu a {
@@ -222,6 +226,7 @@ a:hover {
 
 #content .main-page .title-line {
   border-bottom: 1px solid #f00;
+    margin-bottom: 15px;
 }
 
 #slider {
@@ -542,10 +547,11 @@ a:hover {
     position: relative;
     float: left;
     width: 100%;
+    text-decoration: underline;
 }
 #homeSlider .carousel-caption .read-more:hover{
     text-decoration: none;
-    color: #fff;
+    color: #fff!important;
 }
 #homeSlider{
     margin-bottom: 10px;
@@ -556,7 +562,12 @@ a:hover {
 #homeSlider .item img{
     width: 100%;
 }
-
+.evaluation-screen{
+    border-top: 1px solid #ff0000;
+    border-bottom: 1px solid #ff0000;
+    margin: 20px 0;
+    padding-top: 5px;
+}
 .evaluation-screen .evaluation-left-side {
     position: relative;
     float: left;
@@ -651,7 +662,7 @@ height: 22px;
 text-align: left;
 color:#a6a6a6;
 font-style: italic;
-padding: 5px 6px;
+padding: 2px 6px;
 height: 22px;
 cursor: pointer;
 -webkit-box-sizing: border-box;
@@ -823,10 +834,161 @@ background: url(../img/delete.svg) center center no-repeat;
     font-size: 12px;
 }
 .input-file:before{
-  content:'Выберите файл или перетащите сюда';
+  content:'Select file or drag here';
   position: absolute;
-  left: 32px;
+  left: 77px;
   bottom: 11px;
   font-size: 12px;
 
 }
+#quick-order-main-block {
+    margin-top: 20px;
+}
+#quick-order-main {
+padding-top: 1px;
+border-bottom: 1px solid #ff0000;
+padding-bottom: 23px;
+}
+
+#quick-order-main .ico-nets {  position: absolute;
+top: 0;
+left: -18px;
+background: url(../img/com.png) no-repeat;
+background-size: auto 100%;
+height: 27px;
+width: 27px;
+border: 1px solid #8b51a2;
+border-radius: 20px;
+}
+
+#quick-order-main .ico-viber {
+  background-position: left top;
+}
+
+#quick-order-main .ico-whatsapp {
+  background-position: -41px top;
+  border-color: #4fc48a;
+}
+
+#quick-order-main .ico-telegram {
+  background-position: -82px top;
+  border-color: #76d1f7;
+}
+
+#quick-order-main .ico-instagram {
+  background-position: -123px top;
+  border-color: #c6066e;
+}
+
+#quick-order-main .ico-facebook {
+  background-position: -164px top;
+  border-color: #3c5a99;
+}
+
+#quick-order-main .ico-vkontakte {
+  background-position: -206px top;
+  border-color: #28507c;
+}
+
+#quick-order-main .ico-skype {
+  background-position: -247px top;
+  border-color: #00aaf1;
+}
+
+#quick-order-main .ico-ok {
+  background-position: -288.6px top;
+  border-color: #ec5400;
+}
+
+#quick-order-main .ico-pin {
+  background-position: -316px top;
+}
+
+#quick-order-main .ico-email {
+  background: url(../img/email.svg) center center no-repeat;
+  background-size: 70% auto;
+  border-color: #ff3950;
+}
+
+#quick-order-main .ico-phone {
+  background: url(../img/phone.svg) center center no-repeat;
+  background-size: 70% auto;
+  border-color: #ee6702;
+}
+
+
+#quick-order-main .quick-order-title {
+position: relative;
+float: left;
+font-size: 15px;
+margin-top: 8px;
+margin-left: 4px;
+text-align: left;
+color: #343333;
+font-weight: bold;
+text-decoration: none;
+}
+
+#quick-order-main .quick-order-fix {
+  position: relative;
+  float: left;
+}
+
+#quick-order-main .quick-order-line {
+position: relative;
+float: left;
+margin-top: 16px;
+}
+
+#quick-order-main .quick-order {
+position: relative;
+float: left;
+/*border: 1px solid #ec793a;*/
+cursor: pointer;
+padding: 8px 0 3px 13.5px;
+/*margin: -1px 10px 0 20px;*/
+margin: -1px 10px 0 18px;
+border-radius: 5px;
+font-size: 14px;
+color: #9f9696;
+text-transform: uppercase;
+}
+#quick-order-main .instagram{
+  margin-right: 20px!important;
+}
+#quick-order-main .facebook{
+margin-left: 17px!important;
+margin-right: 24px!important;
+}
+#quick-order-main .ok{
+
+margin-left: 25px!important;
+}
+#quick-order-main .quick-order.left-fix-margin {
+margin-right: 0;
+}
+
+#quick-order-main .quick-order-phone {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #bbb;
+  padding: 2px 9px 3px 9px;
+  font-family: 'latobold_italic';
+  font-size: 16px;
+  z-index: 10;
+}
+
+#quick-order-main .quick-order-fix:hover .quick-order-phone {
+  display: block;
+}
+.evaluation-screen .placeholder::-webkit-input-placeholder       {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder::-moz-placeholder                {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder:-moz-placeholder                 {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder:-ms-input-placeholder            {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder:focus::-webkit-input-placeholder {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder:focus::-moz-placeholder          {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder:focus:-moz-placeholder           {color:#a6a6a6; font-style: italic;}
+.evaluation-screen .placeholder:focus:-ms-input-placeholder      {color:#a6a6a6; font-style: italic;}
