@@ -154,8 +154,10 @@ a:hover {
 #header .header .header-order {
   left: 49.5%;
   background: url(../img/envelope.svg) left center no-repeat;
+  color: #ff0808;
   background-size: auto 97%;
   padding-left: 27px;
+    
 }
 
 #header .header .header-slogan {
@@ -796,17 +798,18 @@ text-decoration: none;
 }
 
 #communications-main .communications-link {
-position: relative;
-float: left;
-/*border: 1px solid #ec793a;*/
-cursor: pointer;
-padding: 8px 0 3px 13.5px;
-/*margin: -1px 10px 0 20px;*/
-margin: -1px 10px 0 18px;
-border-radius: 5px;
-font-size: 14px;
-color: #9f9696;
-text-transform: uppercase;
+    position: relative;
+    float: left;
+    /*border: 1px solid #ec793a;*/
+    cursor: pointer;
+    padding: 8px 0 3px 13.5px;
+    /*margin: -1px 10px 0 20px;*/
+    margin: -1px 10px 0 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #9f9696;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 #communications-main .instagram{
   margin-right: 20px!important;
@@ -847,3 +850,52 @@ margin-right: 0;
 .evaluation-screen .placeholder:focus::-moz-placeholder          {color:#a6a6a6; font-style: italic;}
 .evaluation-screen .placeholder:focus:-moz-placeholder           {color:#a6a6a6; font-style: italic;}
 .evaluation-screen .placeholder:focus:-ms-input-placeholder      {color:#a6a6a6; font-style: italic;}
+
+
+.specialist-block .specialist-block-images {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.specialist-block .specialist-block-images .specialist-block-img-item {
+    position: relative;
+    float: left;
+    width: 33%;
+}
+
+.specialist-block .specialist-block-images .specialist-block-img-item img {
+    max-width: 100%;
+}
+.specialist-block  .desc {
+    font-size: 19.5px;
+    font-style: italic;
+    color: #404040;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 21px;
+    font-family: 'latobold_italic';
+}
+.goods-main-title{
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #f00;
+    font-weight: normal;
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    font-family: 'latomedium';
+}
+.goods-main-title:before{
+    content: '';
+    position: absolute;
+    right: -24px;
+    background: url(../img/arrow.png) no-repeat;
+    width: 10px;
+    height: 18px;
+    top: 4px;
+    
+}
