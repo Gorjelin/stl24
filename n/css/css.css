@@ -11,11 +11,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 :focus:-moz-placeholder           {color:transparent;}
 :focus:-ms-input-placeholder      {color:transparent;}
 body {
-  font: normal 75%/150% 'latoregular', Arial, Tahoma, Verdana, Georgia, sans-serif;
-  font-size: 14px;
-  min-width: 100%;
-  color: #232323 !important; }
-
+    font: normal 75%/150% 'latoregular', Arial, Tahoma, Verdana, Georgia, sans-serif;
+    font-family: 'latomedium';
+    font-size: 14px;
+    color: #727b83!important;
+    min-width: 100%;
+    line-height: 1.1!important;
+}
+h2, h3, h4, h5, h6 {
+    color: #000;
+    margin: 15px 0;
+}
+strong {
+    color: #000;
+}
 a {
   color: #000;
 }
@@ -975,4 +984,36 @@ margin-right: 0;
     float: left;
     background: url(../img/cart-red.png) no-repeat;
     margin-left: 12px;
+}
+.home-text .preview-text .show-all-text {
+    position: absolute;
+    left: 50%;
+    bottom: -21px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/arrow-show.svg) center center #fff no-repeat;
+    background-size: 25px auto;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.home-text .preview-text {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bbb;
+}
+.home-text .all-text-block {
+    display: none;
+    margin-bottom: 20px;
+}
+.home-text .preview-text .preview-text-fix {
+    padding-bottom: 30px;
+    background: #fff;
+}
+.home-text {
+    margin-top: 50px;
+}
+.home-text .all-text-block  p {
+    margin: 8px 0;
 }

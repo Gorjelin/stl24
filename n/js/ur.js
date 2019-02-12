@@ -63,6 +63,11 @@ $(document).ready(function(){
 		})
 
 	});
+	
+	$('.home-text .preview-text .show-all-text').click(function(){
+		$(this).slideUp('180');
+		$('.all-text-block').slideDown('180');
+	})
 
 
 
