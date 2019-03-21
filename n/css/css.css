@@ -371,6 +371,7 @@ float: left;
     background: #f0f1f5;
     z-index: 100;
     padding: 20px 30px;
+    margin-left: -400px;
     
 }
 #mob-menu a{
@@ -393,6 +394,7 @@ float: left;
     right: 16px;
     z-index: 100;
     background-color: #f0f1f5;
+    display: none;
 }
 @media (max-width: 1599px){
     #header .logo img {
@@ -466,6 +468,9 @@ float: left;
         display: none;
     }
     #mob-menu{
+        display: block;
+    }
+    #mob-btn{
         display: block;
     }
 }
