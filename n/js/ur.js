@@ -1,73 +1,100 @@
 $(document).ready(function(){
 
-
-
-	var countFiles = 0;
-	$(document).on('change', '#evaluation-form .input-file', function() {
-
-	var str = $('.column-line-input.pl-holder.column-line-div').text();
-	var countFiles = str.substr(-1);
-	countFiles = Number(countFiles);
-	if(isNaN(countFiles)){
-		countFiles = 0;
-	}
-	if(this.files[0] != undefined){
-		countFiles++
-	}
-	else{
-		countFiles--;
-	}
-
-	 if(countFiles > 3) countFiles = 3;
-	$('.column-line-input.pl-holder.column-line-div').html(addedFile + countFiles);
-	//var nameFile = document.getElementById("file").files;
-	//$('.file-txt').html('Р В¤Р С•РЎвЂљР С•: ' + nameFile[0].name);
+	$('.elected-buttons-wrapper a').click(function(){
+		$('.elected-buttons-wrapper a').removeClass('active');
+		$(this).addClass('active');
 	});
-
-	$('body').on('change', '.input-file', function(){
-		var fileAttr = $(this).attr('name'); 
-		//$("[data-input="+ fileAttr +"]").show();
-	});
-
-	$('body').on('click', '#evaluation-form .column-line-div-text', function(){
-		$('#evaluation-form .column-line-textarea-block').css('display', 'block').animate({'opacity': '1'}, 200, function(){
-		  $('#evaluation-form').append('<div id="evaluation-click"></div>')
-		})
-	})
-
-	$('body').on('click', '#evaluation-click, #evaluation-form .column-line-textarea-block .x', function(){
-
-	$('#evaluation-form .column-line-textarea-block').animate({'opacity': '0'}, 200, function(){
-	  $(this).css('display', 'none');
-	  var textarea = $('#evaluation-form .column-line-textarea-block .column-line-textarea').val();
-
-	  $('#evaluation-form .column-line-div-text').html(textarea);
-
-	  $('#evaluation-click').remove();
-	})
-
-	});
-
-
-	$('body').on('click', '#evaluation-form .column-line-div', function(){
-	$('#evaluation-form .file-wrapp').css('display', 'block').animate({'opacity': '1'}, 200, function(){
-	  $('#evaluation-form').append('<div id="evaluation-click"></div>')
-		})
-	})
-
-	$('body').on('click', '#evaluation-click, #evaluation-form .file-wrapp .x', function(){
-
-		$('#evaluation-form .file-wrapp').animate({'opacity': '0'}, 200, function(){
-		  $(this).css('display', 'none');
-		  $('#evaluation-click').remove();
-		})
-
+	$('#our-spec .buttons a').click(function(){
+		$('#our-spec .buttons a').removeClass('active');
+		$(this).addClass('active');
 	});
 	
-	$('.home-text .preview-text .show-all-text').click(function(){
-		$(this).slideUp('180');
-		$('.all-text-block').slideDown('180');
-	})
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:30,
+		responsiveClass:true,
+		navText : ["",""],
+		responsive:{
+			0:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:3,
+				nav:false
+			},
+			1000:{
+				items:5,
+				nav:true,
+				loop:false
+			}
+		}
+	});
+	
+	/*Переключатель вкладо в блоке ПРОЦЕСС*/
+	 $('.btnNext').click(function(){
+	  $('#process .buttons > .active').next('li').find('a').trigger('click');
+	});
+
+	  $('.btnPrevious').click(function(){
+	  $('#process .buttons > .active').prev('li').find('a').trigger('click');
+	});
+
+	
+	
+	 $('body').on('change', '#file-consultation', function(){
+		 if(this.files[0]){
+			 if(this.files[0] != undefined){
+				 $('#file-label .file-txt').html(this.files[0].name);
+			 }
+		 }
+		 if(this.files[0] == undefined){
+			$('#file-label .file-txt').html('<span>Выберите файл</span>  или перетащите сюда');
+		}
+	 });
+	 
+	 
+	 
+	 /*Кнопка Вверх при скроле*/
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 400) {
+			$('#toTop').fadeIn();
+		} else {
+			$('#toTop').fadeOut();
+		}
+	});
+	 
+	$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});
+	
+	
+	
+	/*Все блоки одной высоты*/
+	if($(document).width() < 1300){
+		var mh = 0;
+	   $("#about-us .about-items .item").each(function () {
+		   var h_block = parseInt($(this).innerHeight());
+		   if(h_block > mh) {
+			  mh = h_block;
+		   };
+	   });
+	    $("#about-us .about-items .item").height(mh + 15);
+	
+	}
+	
+	/*Сделать картинки квадратными */
+	var img_w = $('#articles .article .img-wrapp').width();
+	$('#articles .article .img-wrapp').height(img_w);
+	
+	
+	
+	
+	
+	
+//console.log($('.item.item1').innerHeight());
+	
+	
 
 
 
