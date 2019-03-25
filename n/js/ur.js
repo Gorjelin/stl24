@@ -53,6 +53,19 @@ $(document).ready(function(){
 		}
 	 });
 	 
+	 $('body').on('change', '#file-pop', function(){
+		 
+		 if(this.files[0]){
+			 if(this.files[0] != undefined){
+				 console.log(this.files[0].name);
+				 $('#file-label-pop .file-txt').html(this.files[0].name);
+			 }
+		 }
+		 if(this.files[0] == undefined){
+			$('#file-label-pop .file-txt').html('<span>Выберите файл</span><br/>  или перетащите сюда');
+		}
+	 });
+	 
 	 
 	 
 	 /*Кнопка Вверх при скроле*/
@@ -84,18 +97,21 @@ $(document).ready(function(){
 	}
 	
 	/*Сделать картинки квадратными */
+	if($(document).width() < 1600){
 	var img_w = $('#articles .article .img-wrapp').width();
-	$('#articles .article .img-wrapp').height(img_w);
-	
-	
-	
-	
-	
-	
-//console.log($('.item.item1').innerHeight());
-	
+		$('#articles .article .img-wrapp').height(img_w);
+	}
 	
 
+	/*Всплывашки*/
+	$('.call-me').click(function(){
+		var my_class = $(this).attr('data-class');
+        $('#pop-up-wrapp').show();
+        $('.pop-up.'+my_class).fadeIn(400);
+	});
+	$('.x, #pop-up-wrapp').click(function(){
+        $('#pop-up-wrapp, .pop-up').hide();
+    });
 
 
 })

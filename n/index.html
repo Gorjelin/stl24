@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/css.css">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
 </head>
 <body>
    <div id="mob-menu">
@@ -43,13 +44,13 @@
                         <div class="contact-button">
                             <span>звоните бесплатно и круглосуточно</span>
                             <a class="viber icon" href="#">
-                                <img src="img/viber-header.png" alt="">
+                                <span></span>
                             </a>
                             <a class="whatsapp icon" href="#">
-                                <img src="img/whatsapp-header.png" alt="">
+                                <span></span>
                             </a>
                             <a class="telegram icon" href="#">
-                                <img src="img/telegram-header.png" alt="">
+                                <span></span>
                             </a>
 
                         </div>
@@ -58,7 +59,7 @@
                 
                 <div class="wrapp-header">
                    
-                        <div class="order-model">
+                        <div class="order-model call-me" data-class="defolt-pop-up">
                             Заказать модель
                         </div>
                         <div class="mail">
@@ -860,7 +861,7 @@
                         <li><a href="#prog" aria-controls="prog" role="tab" data-toggle="tab"><span>ЧПУ программисты</span></a></li>
                         <li><a href="#mod" aria-controls="mod" role="tab" data-toggle="tab"><span>Моделлеры</span></a></li>
                     </ul>
-                    <div class="request">оставить заявку на консультацию</div>
+                    <div class="request call-me" data-class="defolt-pop-up">оставить заявку на консультацию</div>
                     
                 </div>
                 <div class="right-side">
@@ -2083,13 +2084,13 @@
                             <span class="phone-ico">8 800 700 47 45</span>
                             <div class="ico-wrapp">
                                 <a class="viber icon" href="#">
-                                    <img src="img/viber-header.png" alt="">
+                                    <span></span>
                                 </a>
                                 <a class="whatsapp icon" href="#">
-                                    <img src="img/whatsapp-header.png" alt="">
+                                    <span></span>
                                 </a>
                                 <a class="telegram icon" href="#">
-                                    <img src="img/telegram-header.png" alt="">
+                                    <span></span>
                                 </a>
                             </div>
                             <div class="phone">
@@ -2204,8 +2205,46 @@
             </div>
         </div>
     </div>
-
     
+<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [59.948708, 30.259517],
+                zoom: 19,
+                controls: []
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Набережная реки Смоленки, 19-21, офис 54',
+                balloonContent: 'Набережная реки Смоленки, 19-21, офис 54'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/ball.png',
+                // Размеры метки.
+                iconImageSize: [90, 125],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+
+        myMap.geoObjects
+            .add(myPlacemark)
+            .add(myPlacemarkWithContent);
+    });
+      
+  </script>
+   
     <div id="map" class="ps">
         <div class="board">
             <div class="con ps">
@@ -2222,24 +2261,26 @@
                 <span class="ico"></span><a href="#">info@for3d.ru</a>
             </div>
             <div class="soc-ico ps">
-                <div class="ico"><a href="#"><img src="img/f.jpg" alt=""></a></div>
-                <div class="ico"><a href="#"><img src="img/vk.jpg" alt=""></a></div>
-                <div class="ico"><a href="#"><img src="img/inst.jpg" alt=""></a></div>
+                <a href="#" class="ico fb"></a>
+                <a href="#" class="ico vk"></a>
+                <a href="#" class="ico inst"></a>
             </div>
             
         </div>
     </div>
+
     <div id="bottom-soc" class="ps">
         <div class="wrapper">
             <div class="ps">
-                <a href="#" class="ico"><img src="img/f-wib.jpg" alt=""></a>
-                <a href="#" class="ico"><img src="img/f-wa.jpg" alt=""></a>
-                <a href="#" class="ico"><img src="img/f-tel.jpg" alt=""></a>
-                <a href="#" class="ico"><img src="img/f-inst.jpg" alt=""></a>
-                <a href="#" class="ico"><img src="img/f-sk.jpg" alt=""></a>
+                <a href="#" class="ico viber"></a>
+                <a href="#" class="ico wa"></a>
+                <a href="#" class="ico tg"></a>
+                <a href="#" class="ico inst"></a>
+                <a href="#" class="ico skype"></a>
             </div>
         </div>
     </div>
+    
     <div id="footer" class="ps">
         <div class="wrapper">
             <div class="ps">
@@ -2269,13 +2310,13 @@
                         </div>
                         <div class="soc-btn">
                             <a class="viber icon" href="#">
-                                <img src="img/viber-header.png" alt="">
+                                
                             </a>
                             <a class="whatsapp icon" href="#">
-                                <img src="img/whatsapp-header.png" alt="">
+                                
                             </a>
                             <a class="telegram icon" href="#">
-                                <img src="img/telegram-header.png" alt="">
+                                
                             </a>
                             <span>+7 999 207 77 88</span>    
                         </div>
@@ -2284,7 +2325,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-model">
+                <div class="order-model call-me" data-class="defolt-pop-up">
                     заказать модель
                 </div>
                 <form action="" class="search">
@@ -2296,7 +2337,34 @@
     </div>
     
     <div id="toTop"></div>
-    
+    <div id="pop-up-wrapp"></div>
+    <div class="pop-up defolt-pop-up">
+        <div class="x"></div>
+        <h2>Заказ 3d модели</h2>
+        <div class="desc">Отправьте заявку и мы свяжемся с Вами в ближайшее время</div>
+        <div class="ps">
+            <form action="" class="feedback ps">
+                <div class="left">
+                   <input type="text" placeholder="Имя">
+                   <input type="text" placeholder="Телефон">
+                   <input type="text" placeholder="E-mail">
+                    <label id="file-label-pop" for="file-pop">
+                        <input id="file-pop" type="file">
+                        <div class="file-txt"><span>Выберите файл</span><br/> или перетащите сюда</div>
+                    </label>
+                </div>
+                <div class="right">
+                    <textarea name="" class="text"></textarea>
+                    <button name="submit" class="submit">отправить</button>
+                    <label class="ps ps-text">
+                        <input type="checkbox" checked="cheked">
+                        <span></span>
+                        Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями и <a href="#">политикой конфиденциальности</a>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
     
     
     
