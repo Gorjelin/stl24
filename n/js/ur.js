@@ -113,5 +113,11 @@ $(document).ready(function(){
         $('#pop-up-wrapp, .pop-up').hide();
     });
 
+	
+	$('.show-cat').hover(function(){
+		$('#sub-cat-menu').show();
+	}, function(){
+		$('#sub-cat-menu').hide();
+	});
 
 })

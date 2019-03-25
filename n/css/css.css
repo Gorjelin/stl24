@@ -355,7 +355,6 @@ float: left;
 }
 #header #top-menu .top-menu{
     list-style: none;
-    padding: 15px 0;
     position: relative;
     float: left;
 }
@@ -366,12 +365,14 @@ float: left;
     display: inline-block;
     margin: 0 35px;
 }
-#header #top-menu .top-menu li a{
+#header #top-menu .top-menu li .menu-link{
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0.9px;
     color: #414141;
     position: relative;
+    padding: 15px 0;
+    display: block;
 }
 #header #top-menu .top-menu li a:hover{
     text-decoration: none;
@@ -386,8 +387,9 @@ float: left;
     height: 2px;
     background: #ff5959;
     left: 0;
-    bottom: -14px;
+    bottom: 0;
 }
+
 #mob-menu{
     display: none;
     position: fixed;
@@ -404,6 +406,7 @@ float: left;
     margin-bottom: 8px;
     list-style: none;
 }
+
 #mob-btn{
     background: url(../icons/mob-btn.svg) no-repeat;
     background-position: center center;
@@ -419,6 +422,72 @@ float: left;
     background-color: #f0f1f5;
     display: none;
     background-size: 24px;
+}
+#sub-cat-menu .column{
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-left: 20px;
+}
+#sub-cat-menu .column .item-menu {
+    height: 20px;
+    position: relative;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+#sub-cat-menu .column .arrow{
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARUSURBVHhe7dxZqHVzGMfxbS6Z53nMa8qUG0W5kEhJipT0JiTv25skIaQQkpCEEC64cOGColy4EeXGnDnzPEcyj9/fyard8bxnr7Of9V97rbV/3/pcvL3nrL3Wek77rLP3f+2Rc84555xzzjnnnHPOOeecc84555xzzrmZtzUOwyYL/3KL2xMHYL2FfxVsOzyBf/7zB27FhnCj0ZF4F9X5+RpnoEjb4zVUDzbuUcz7UI7FT1h8bv7GKjTaUsOoPI6NMI8dj18QnRdpdCh1hlHR09nGmKdOxG+Izse4Roai3xl1h1F5EvMylJNRZxiV1FCmGUblKQz9CuxU/I7o+Jcy1VC2xbTDqDyDzTDETsefiI67Dg3lXNTuMUQbWq5nsTmG1EpkhlHRNvS33MQ2hSYYbWQaz2FLDKGz8Rei45zGtZiY/sKMvjnjBWyDPncemvxBlQcxsQ3wM6INZLwMXSj0sTVoehhyMWp1NaINZOlCYQf0qQtRYhhfQhdPtdKLYvch2lDWG9gJfegSRMeQ9S1q/UIfr+RQ3sau6HKXI9r3rG+w7GFUrYt7EW046z3sji5W6ilbr/4eilTr4B5ED5D1AfZCl7oO0b5mfYVD0Egayt2IHijrI+yDLnQjon3M0jAOQqNpKHchesCsT7EfZpWOTW+0RfuWVWQYVdrxOxE9cNbn0B+lbadjugPRPmXp0vZAFE0HcDuiHcjST9PBaCsdS6mn4i/Q2g+YDuQ2RDuSlbosXEa6rL8f0T5kaRj7o9VKDuU7HI5SaRgPIHrsLD31tj6MKg2l1C/D73EEmm59PIToMbM+wywvThbSUG5BtINZP+AoNJVWxjyM6LGydKW4LzrTzYh2NOtHHI1sGsYjiB4j6xOsQOe6CdEOZ2m90zGYNi1P0jKlaNtZnR1GVam/djWU47DctAJmfLVlkz5GV15lWLIbEB1A1q84AXXTMLQsKdpWll7y2Ru96XpEB5KldVAnYVJahqTlSNE2sj5E114UrVXJoZyCtaXlR08j+t6s3g6jSisrogPL0sr707A4LTvS8qPoe7L0doFuNeh91yA6wCytbRpf7q/lRlp2FH1t1vvYA4PpKkQHmqWhnAktM9Jyo+hrsrr87maqUkPRqhA9nUT/l6Vh7IbBdiWiA+8i3Q016GFUXYHoBHTJO+j6yphGuwzRiegCLVPaBXNXF4eiYeyMue1SRCdmFt7CXA+jSouOoxPUpjfRlyWurXQRohPVBq033hFuUbMYyuvo24r8VtPy/+jEleBh1OwClLgnY5zuVdE9+K5m56PUUF5FX+/mmmklhvIKat+55P5fk/f3eRgNtRrZobwED6PBMrclv4i+35bdyaYZit600ifguULpM0LqDkXD2AqucOdg0lCeh4fRYmdhbZ87MqTPV+lV+mQerWYcH4YWx20BN6P0nrd+r+htYX32oe6td84555xzzjnnnHPOOeecc84559zgGo3+BW0ALurRxPe/AAAAAElFTkSuQmCC");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	position: relative;
+    width: 11px;
+    height: 9px;
+    z-index: 1;
+}
+#sub-cat-menu .column .item-menu:hover{
+    color: #ff5959;
+}
+#sub-cat-menu .sub-list-menu{
+   display: none;
+    position: absolute;
+    width: 200px;
+    top: 15px;
+    left: 0px;
+    padding: 5px;
+    border: 1px solid #dadada;
+    background: #fff;
+    z-index: 2;
+}
+#header #sub-cat-menu .sub-list-menu li{
+    margin: 0!important;
+    line-height: 16px;
+}
+#header #sub-cat-menu .sub-list-menu li a{
+    font-size: 11px;
+}
+#sub-cat-menu .item-menu .open-sub:hover > .sub-list-menu{
+    display: block;
+}
+#header #top-menu #sub-cat-menu{
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: -26px;
+    min-width: 900px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    font-size: 11px !important;
+    padding: 15px 0 10px;
+}
+#header #top-menu .item-menu:hover> .sub-list-menu{
+    display: block;
+}
+.show-cat:hover>#sub-cat-menu{
+    display: block;
 }
 @media (max-width: 1599px){
     #header .logo img {
