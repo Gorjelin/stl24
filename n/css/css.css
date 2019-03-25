@@ -86,9 +86,9 @@ float: left;
 #header .logo-txt{
     float: left;
     font-weight: 200;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 25px;
-    margin-top: 31px;
+    margin-top: 33px;
     letter-spacing: -1px;
 }
 #header .phone-box{
@@ -427,7 +427,7 @@ float: left;
     #header .logo-txt{
         font-size: 19px;
         line-height: 25px;
-        margin-top: 23px;
+        margin-top: 32px;
     }
     #header .logo {
         margin-right: 15px;
@@ -445,6 +445,25 @@ float: left;
         display: none;
     }
 }
+@media (max-width: 1360px){
+    #header .order-model{
+        padding: 19px 20px;
+        font-size: 15px;
+    }
+    #header .logo-txt {
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 32px;
+    }
+    #header .cart-wrapp{
+        margin-left: 25px;
+    }
+}
+@media (max-width: 1100px){
+    #header .logo-txt{
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 1250px){
     #header .order-model{
@@ -452,6 +471,12 @@ float: left;
     }
     #header .cart-wrapp{
         margin-left: 95px;
+    }
+    #header .cart-wrapp{
+        margin-left: 20px;
+    }
+    #header .phone-box{
+        margin-left: 20px;
     }
 }
 @media (max-width: 1050px){
@@ -2826,7 +2851,8 @@ background: #ff5959;
 #footer  .footer-logo{
    float: left;
     position: relative;
-    width: 380px;
+    width: 435px;
+
 }
 #footer  .footer-logo img{
     width: 85px;
@@ -2993,6 +3019,9 @@ background: #ff5959;
     background-position: center center;
     background-size: 55%;
     
+}
+#footer .logotype{
+    color: #fff;
 }
 @media (max-width: 1599px){
     #footer .menu{
@@ -3334,6 +3363,16 @@ background: #ff5959;
     background: #f1f8ff url(../icons/gal.svg) 3px 4px no-repeat;
     background-size: 13px;
 }
-
+.logotype{
+    float: left;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 31px;
+    margin-top: 42px;
+    margin-right: 15px;
+    transition:0.3s;
+}
 
 
