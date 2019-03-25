@@ -31,6 +31,9 @@ $(document).ready(function(){
 		}
 	});
 	
+	
+
+	
 	/*Переключатель вкладо в блоке ПРОЦЕСС*/
 	 $('.btnNext').click(function(){
 	  $('#process .buttons > .active').next('li').find('a').trigger('click');
